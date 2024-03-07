@@ -1,0 +1,102 @@
+:root {
+  --primary: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark: hsl(0, 0%, 12%);
+  --off: hsl(0, 0%, 8%);
+
+  --primary-font: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--off);
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main styles start from here */
+.wrapper {
+  max-width: 360px;
+  height: 575px;
+  background-color: var(--dark);
+  border-radius: 15px;
+  padding: 35px;
+  margin: 0 15px;
+}
+
+.profile-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--white);
+}
+
+.avatar {
+  width: 100%;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.info p {
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.profile-section p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.social-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.social-section p {
+  background-color: var(--grey);
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.attribution {
+  text-align: center;
+  color: var(--white);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: var(--primary);
+}
